@@ -12,8 +12,9 @@
 * Flask app with both Web UI and a `POST /detect` API
 * Supports image & PDF uploads, batch processing
 * Generates annotated PDF reports and emails them to users
+
 * Deployed on **Render**:
-  [https://visio-construct-ai.onrender.com](https://visio-construct-ai.onrender.com)
+  [https://visioconstruct-ai.onrender.com](https://visio-construct-ai.onrender.com)
 
 ---
 
@@ -24,7 +25,7 @@ VisioConstruct-AI/
 ├── images/                   # Original blueprint images
 ├── labels/                   # YOLO-format .txt label files
 ├── classes.txt               # ["door", "window"]
-├── best_onnx.onnx            # ONNX-exported YOLOv8-n model
+├── best.onnx            # ONNX-exported YOLOv8-n model
 ├── app.py                    # Flask web & API + PDF/email logic
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # This file
@@ -159,7 +160,7 @@ On a single CPU instance (Render free tier):
    ![Training Plot](https://raw.githubusercontent.com/1543siddhant/VisioConstruct-AI/refs/heads/main/runs/detect/yolov8n_blueprint_fullrun/results.png)
 
 3. **API Response**
-   ![API Response](Proof_of_Work/api_response.png)
+   ![API Response](https://raw.githubusercontent.com/1543siddhant/VisioConstruct-AI/refs/heads/main/runs/detect/yolov8n_blueprint_fullrun/Screenshot%202025-06-01%20182948.png)
 
 ---
 
