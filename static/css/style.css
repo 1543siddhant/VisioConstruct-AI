@@ -1,0 +1,25 @@
+/* Base */
+body { margin:0; font-family:'Segoe UI',sans-serif; background:#1f2937; color:#e5e7eb; display:flex;align-items:center;justify-content:center;min-height:100vh; }
+.wrapper { background:#111827; padding:2rem; border-radius:8px; width:360px; box-shadow:0 4px 16px rgba(0,0,0,0.5); }
+header { text-align:center; margin-bottom:1rem; }
+.logo { width:50px; margin-bottom:0.5rem; }
+h1 { font-size:1.5rem; color:#10b981; }
+
+/* Flashes */
+.flashes { margin-bottom:1rem; }
+.flash { padding:0.5rem; border-radius:4px; margin-bottom:0.5rem; font-size:0.9rem; }
+.flash.success { background:#047857; color:#d1fae5; }
+.flash.error   { background:#7f1d1d; color:#fee2e2; }
+
+/* Form */
+.form label { display:block; margin-top:1rem; font-weight:600; }
+.form input, .form textarea { width:100%; padding:0.5rem; margin-top:0.25rem; border-radius:4px; border:1px solid #374151; background:#1f2937; color:#e5e7eb; }
+.form textarea { resize:vertical; }
+button { width:100%; margin-top:1.5rem; padding:0.75rem; background:linear-gradient(90deg,#3b82f6,#6366f1); border:none; color:#fff; font-size:1rem; border-radius:4px; cursor:pointer; transition:transform .2s; }
+button:hover { transform:translateY(-2px); }
+
+/* Result */
+.result { margin-top:1.5rem; text-align:center; }
+.result img { width:100%; border:2px solid #10b981; border-radius:4px; }
+.result ul { list-style:none; padding:0; margin-top:0.75rem; }
+.result li { background:#374151; padding:0.5rem; margin:0.25rem 0; border-radius:4px; font-size:0.9rem; }

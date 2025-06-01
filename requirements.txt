@@ -1,0 +1,6 @@
+flask
+onnxruntime
+pillow
+fpdf2
+python-dotenv
+gunicorn

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blueprint Vision 🎯</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="logo">
+      <h1>Blueprint VisioConstruct-AI</h1>
+    </header>
+
+    {% with msgs = get_flashed_messages(with_categories=true) %}
+      {% if msgs %}
+        <div class="flashes">
+          {% for cat, txt in msgs %}
+            <div class="flash {{ cat }}">{{ txt }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form method="post" enctype="multipart/form-data" class="form">
+      <label>Select Blueprint Image</label>
+      <input type="file" name="file" accept="image/*" required>
+
+      <label>Your Email</label>
+      <input type="email" name="email" placeholder="you@example.com" required>
+
+      <label>Comment for PDF</label>
+      <textarea name="comment" rows="3" placeholder="Add a note..."></textarea>
+
+      <button type="submit">Detect & Email</button>
+    </form>
+
+    {% if result_image %}
+      <div class="result">
+        <h2>Preview</h2>
+        <img src="{{ url_for('static', filename='img/preview.png') }}" alt="Result">
+
+        <div class="counts">
+          <p><strong>Total Doors:</strong> {{ counts.door }}</p>
+          <p><strong>Total Windows:</strong> {{ counts.window }}</p>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
