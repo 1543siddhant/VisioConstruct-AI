@@ -142,7 +142,7 @@ On a single CPU instance (Render free tier):
 
 ## 📈 Training Metrics
 
-![Training & Metrics](Proof_of_Work/training_plot.png)
+![Training & Metrics](https://raw.githubusercontent.com/1543siddhant/VisioConstruct-AI/refs/heads/main/runs/detect/yolov8n_blueprint_fullrun/confusion_matrix.png)
 
 * **Box/Cls/DFL losses** converge by epoch 60
 * **Precision/Recall** both exceed 0.8
@@ -156,7 +156,7 @@ On a single CPU instance (Render free tier):
    ![Labeling](Proof_of_Work/labeling.png)
 
 2. **Training Curves**
-   ![Training Plot](Proof_of_Work/training_plot.png)
+   ![Training Plot](https://raw.githubusercontent.com/1543siddhant/VisioConstruct-AI/refs/heads/main/runs/detect/yolov8n_blueprint_fullrun/results.png)
 
 3. **API Response**
    ![API Response](Proof_of_Work/api_response.png)
