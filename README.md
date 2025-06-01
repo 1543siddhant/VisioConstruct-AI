@@ -170,7 +170,7 @@ On a single CPU instance (Render free tier):
 
 * **GitHub**: [https://github.com/1543siddhant/VisioConstruct-AI](https://github.com/1543siddhant/VisioConstruct-AI)
 * **Deployed Demo**: [https://visioconstruct-ai.onrender.com](https://visioconstruct-ai.onrender.com)
-* **Loom Video**: [https://www.loom.com/share/6e8f95c4768b4fc182c973df04fcfdb8?sid=69af1868-c2e5-425a-8841-e1f5b8f24956]https://www.loom.com/share/6e8f95c4768b4fc182c973df04fcfdb8?sid=69af1868-c2e5-425a-8841-e1f5b8f24956)
+* **Loom Video**: [https://www.loom.com/share/6e8f95c4768b4fc182c973df04fcfdb8?sid=69af1868-c2e5-425a-8841-e1f5b8f24956](https://www.loom.com/share/6e8f95c4768b4fc182c973df04fcfdb8?sid=69af1868-c2e5-425a-8841-e1f5b8f24956)
 
 ---
 
