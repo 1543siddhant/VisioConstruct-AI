@@ -154,7 +154,7 @@ On a single CPU instance (Render free tier):
 ## 📸 Proof of Work
 
 1. **Labeling Screenshot**
-   ![Labeling](Proof_of_Work/labeling.png)
+   ![Labeling](https://raw.githubusercontent.com/1543siddhant/VisioConstruct-AI/refs/heads/main/runs/detect/yolov8n_blueprint_fullrun/Screenshot%202025-06-01%20024329.png)
 
 2. **Training Curves**
    ![Training Plot](https://raw.githubusercontent.com/1543siddhant/VisioConstruct-AI/refs/heads/main/runs/detect/yolov8n_blueprint_fullrun/results.png)
