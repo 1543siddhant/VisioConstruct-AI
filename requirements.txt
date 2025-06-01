@@ -1,7 +1,7 @@
 flask
-onnxruntime
+ultralytics
+pymupdf
 pillow
 fpdf2
 python-dotenv
 gunicorn
-pdf2image
