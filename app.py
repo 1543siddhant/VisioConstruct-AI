@@ -22,8 +22,11 @@ SMTP_PORT      = int(os.getenv('SMTP_PORT', 465))
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
-# Load YOLOv8 model
-model = YOLO(r"D:\Palcode\VisioConstruct-AI\best.pt")
+# Load YOLOv8 model from project root
+MODEL_PATH = os.path.join(os.getcwd(), "best.pt")
+if not os.path.exists(MODEL_PATH):
+    raise FileNotFoundError(f"Model file not found: {MODEL_PATH}")
+model = YOLO(MODEL_PATH)
 labels = ['door', 'window']
 
 def pdf_bytes_to_images(pdf_bytes):
@@ -127,7 +130,7 @@ def index():
         total_counts     = {'door': 0, 'window': 0}
         annotated_pages  = []
 
-        # Detect pages
+        # Convert PDF or load image
         if file.filename.lower().endswith('.pdf'):
             pages = pdf_bytes_to_images(data)
         else:
