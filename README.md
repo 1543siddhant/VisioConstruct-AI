@@ -14,7 +14,7 @@
 * Generates annotated PDF reports and emails them to users
 
 * Deployed on **Render**:
-  [https://visioconstruct-ai.onrender.com](https://visio-construct-ai.onrender.com)
+  [https://visioconstruct-ai.onrender.com/](https://visioconstruct-ai.onrender.com/)
 
 ---
 
